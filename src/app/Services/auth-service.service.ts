@@ -8,8 +8,8 @@ import { UserModel, LogInInput} from '../Models/UserModel';
 })
 export class AuthServiceService {
 
-  urlLog = 'http://localhost:8080/api/v1/auth/signup'
-  urlLogIn = 'http://localhost:8080/api/v1/auth/login'
+  urlLog = 'http://localhost:3000/api/v1/auth/signup'
+  urlLogIn = 'http://localhost:3000/api/v1/auth/login'
 
   constructor(private http : HttpClient) { }
 
