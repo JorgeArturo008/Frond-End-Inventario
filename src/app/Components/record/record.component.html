@@ -1,0 +1,55 @@
+<div class="container-fluid Pg1 animated fadeIn fast">
+    <div class="row ">
+        <div class="col ">
+            <div class="container-fluid animated fadeIn ">
+                <img style="margin-top: 20px; border-radius: 2%;" src="https://st3.depositphotos.com/1518767/12737/i/950/depositphotos_127379198-stock-photo-warehouse-team-discussing-while-walking.jpg" height="530px" width="510px" alt>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="container-fluid animated fadeIn ">
+                <form (ngSubmit)="Registrarse()" [formGroup]="loginusuario">
+                    <div class="container-fluid">
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h4>¡Únete a Nostros!
+                                    <STRong>YourInventory</STRong> </h4>
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="email" formControlName="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email
+                                address</label>
+                            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Repetir Password</label>
+                            <input type="password" formControlName="passwordConfirm" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div style="margin-top: 40px;">
+                            <span>
+                            <button type="submit"
+                                class="btn btn-outline-success">Crear Cuenta</button></span>
+                            <span style="float: inline-end;">
+                            <button type="button" routerLink="/home" class="btn btn-outline-danger">Salir</button>
+                        </span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
