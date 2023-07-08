@@ -1,0 +1,99 @@
+.container {
+    margin-top: 25px;
+}
+
+.grid {
+    padding: 1em;
+    display: grid;
+    border: 1px solid #070707;
+    grid-template-rows: 550px;
+    grid-template-columns: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    box-shadow: 5px 5px 15px gray;
+}
+
+.gridAnidado1 {
+    column-gap: 3px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% auto;
+}
+
+.gridAnidado1-1 {
+    row-gap: 3px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 415px;
+}
+
+.gridAnidado1-1 div {
+    border-radius: 8px;
+    background-color: rgb(103, 186, 144);
+}
+
+.gridAnidado1-2 {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 40px 40px 40px;
+    row-gap: 1em;
+}
+
+.gridAnidado1-2 div {
+    background-color: rgb(88, 163, 126);
+}
+
+.gridAnidado1-2 div:hover {
+    border: 1px solid #ececec;
+}
+
+.gridAninado2 {
+    row-gap: 1em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 340px 65px;
+}
+
+.gridAninado2 div {
+    padding: 1em;
+    background-color: rgb(88, 163, 126);
+    border-radius: 10px;
+}
+
+.divCol1 {
+    background-color: rgba(243, 243, 243, 0.747);
+    border-radius: 20px;
+}
+
+.divCol2 {
+    background-color: rgba(243, 243, 243, 0.747);
+    border-radius: 40px;
+}
+
+.TxtAdd {
+    font-size: 1.78em;
+    font-family: Garamond, serif;
+    padding: 1em;
+}
+
+.TxtAdd2 {
+    text-align: center;
+    font-size: 1.78em;
+    font-family: Garamond, serif;
+}
+
+.divContaiinerGif {
+    position: relative;
+    overflow: hidden;
+}
+
+.divContaiinerGif img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}

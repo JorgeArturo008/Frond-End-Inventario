@@ -10,6 +10,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BackgroundComponent } from './Components/background/background.component';
+import { AddProductComponent } from './Components/add-product/add-product.component';
+import { MyInventoryComponent } from './Components/my-inventory/my-inventory.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { BackgroundComponent } from './Components/background/background.componen
     LogInComponent,
     RecordComponent,
     NavbarComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    AddProductComponent,
+    MyInventoryComponent
   ],
   imports: [
     BrowserModule,

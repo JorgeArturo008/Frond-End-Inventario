@@ -1,0 +1,51 @@
+<div class="container animated fadeIn fast">
+    <div class="grid animated fadeIn ">
+
+        <div class="divsCol1">
+            <div class="gridAnidado">
+                <div>
+                    <h2 class="TxtAdd">Añadir un Producto | Add Product</h2>
+                </div>
+                <div class="divImgContainer"><img src="https://i.pinimg.com/originals/72/6d/56/726d56be1a50d133f731b3794d08db8d.gif"></div>
+            </div>
+        </div>
+        <div class="divsCol2">
+            <form>
+                <div class="gridAnidado2">
+                    <div class="gridLarge"><strong><h1 class="TxtAdd1">Datos del Producto<hr></h1></strong>
+
+                    </div>
+                    <div>
+
+                        <label for="formGroupExampleInput" class="form-label"> <strong>Codigo del Producto :</strong></label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="#123">
+
+                    </div>
+                    <div><label for="formGroupExampleInput" class="form-label"> <strong>Precio :</strong></label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="₡1000"></div>
+                    <div>
+
+                        <label for="formGroupExampleInput" class="form-label"> <strong>Descripcion del Producto :</strong></label>
+                        <textarea placeholder="Max-100 words" maxlength="100" id="" cols="30" rows="2"></textarea>
+
+                    </div>
+                    <div><label for="formGroupExampleInput" class="form-label"> <strong>Stock Disponible:</strong></label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="20"></div>
+                    <div class="gridLarge">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Mantenerme Notificado al correo sobre futuros cambios.</label>
+                        </div>
+                    </div>
+                    <div class="gridLarge"><span>
+                        <button type="submit"
+                            class="btn btn-outline-success">Crear Producto</button></span>
+                        <span style="float: inline-end;">
+                        <button type="button" routerLink="/MyInventory" class="btn btn-outline-danger">Atras</button>
+                    </span></div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
