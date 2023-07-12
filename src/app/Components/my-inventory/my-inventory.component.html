@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="grid">
+<div class="container animated fadeIn fast">
+    <div class="grid animated fadeIn ">
         <div class="gridAnidado1">
             <div class="divCol1">
                 <div class="gridAnidado1-1">
@@ -25,12 +25,11 @@
                     <div>
                         <h3 class="TxtAdd2">Lista de Inventario</h3>
                     </div>
-                    <div>
+                    <div class="divScroll">
                         <table class="table ">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">#Producto</th>
+                                    <th scope="col">Codigo P</th>
                                     <th scope="col">Descrpcion</th>
                                     <th scope="col">Stock</th>
                                     <th scope="col">Precio</th>
@@ -38,37 +37,27 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3121321</td>
-                                    <td>Teclado Inalanbrico</td>
-                                    <td>10</td>
-                                    <td>20.000</td>
-                                    <td></td>
+                                <tr *ngFor="let dato of datos  ">
+
+                                    <td>{{dato.code}}</td>
+                                    <td>{{dato.description}}</td>
+                                    <td>{{dato.stock}}</td>
+                                    <td>{{dato.price}}</td>
+                                    <td><button type="button" class="btn btn-primary" (click)="update(dato._id)"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button style="margin-left: 1em;" type="button" (click)="delete(dato._id)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@mdo</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>@mdo</td>
-                                    <td></td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>
                     <div><span><button type="button" class="btn btn-warning">Añadir
-                                Nueva Coleccion</button></span><span style="margin-left: 20px;"><button type="button"
+                                Nueva Coleccion </button></span><span style="margin-left: 20px;"><button type="button"
                                 class="btn btn-primary" routerLink="/add-product">Crear Producto</button></span><span style="float: inline-end;"><button type="button"
                                 routerLink="/home"
                                 type="button" class="btn btn-danger">Salir</button></span></div>
+
+
                 </div>
             </div>
         </div>

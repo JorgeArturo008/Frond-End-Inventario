@@ -64,6 +64,13 @@
     border-radius: 10px;
 }
 
+.divScroll {
+    overflow: auto;
+    padding: 1em;
+    background-color: rgb(88, 163, 126);
+    border-radius: 10px;
+}
+
 .divCol1 {
     background-color: rgba(243, 243, 243, 0.747);
     border-radius: 20px;

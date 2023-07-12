@@ -10,7 +10,7 @@
                 <div class="row g-3 align-items-center container-fluid" style="width: 300px; margin-left: 32%;">
                     <div class="col-md">
                         <div class="form-floating ">
-                            <input type="email " class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
+                            <input formControlName="username" type="email " class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
                             <label for="floatingInputGrid ">Usuario</label>
                         </div>
                     </div>
@@ -19,14 +19,14 @@
                 <div class="row g-2 mt-3 " style="width: 70%; margin-left: 14%;">
                     <div class="col-md">
                         <div class="form-floating ">
-                            <input type="email " class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
+                            <input formControlName="email" class="form-control" type="email " class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
                             <label for="floatingInputGrid ">Email address</label>
                         </div>
                     </div>
                     <div class="col-md ">
                         <div class="form-floating ">
-                            <input type="password " class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
-                            <label for="floatingInputGrid ">Password</label>
+                            <input type="password " formControlName="password" class="form-control " id="floatingInputGrid " placeholder="name@example.com ">
+                            <label type="password" for="floatingInputGrid ">Password</label>
                         </div>
                     </div>
                 </div>

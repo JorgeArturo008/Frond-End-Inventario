@@ -1,16 +1,17 @@
 export class InventoryModel {
+        _id? : string;
+        code: string;
+        description : string;
+        price: Number;
+        stock: Number
 
-        codigoP : Number;
-        Descripcion : string;
-        Precio: Number;
-        Stock: Number
+    constructor( code: string, description : string, price: Number, stock:Number, _id? : string){
 
-    constructor(codigop : Number, Descripcion : string, Precio: Number, Stock:Number){
-
-        this.codigoP = codigop;
-        this.Descripcion = Descripcion;
-        this.Precio = Precio;
-        this.Stock = Stock;
+        this.code = code;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this._id = _id;
 
     }
 }
